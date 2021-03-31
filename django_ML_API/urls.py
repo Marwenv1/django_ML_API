@@ -23,4 +23,6 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('', home),
     path('about/', about),
+    path(r"", include(("upload.urls", "upload"), namespace="api")),
+
 ]
