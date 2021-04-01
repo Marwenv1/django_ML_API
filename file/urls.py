@@ -3,7 +3,7 @@ from rest_framework import routers
 from .views import UploadViewSet
 
 router = routers.DefaultRouter()
-router.register(r'upload', UploadViewSet, basename="upload")
+router.register(r'file', UploadViewSet, basename="file")
 
 # Wire up our API using automatic URL routing.
 urlpatterns = [
